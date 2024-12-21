@@ -25,7 +25,7 @@ namespace Programa
                 Console.Write("Gastow educacionais: ");
                 gastosEducacionais = double.Parse(Console.ReadLine(), CI);
 
-                // *******************************************estrutura imposto 
+                //*********************************************************************
                 double salarioMensal = salarioAnual / 12;
 
                 if (salarioMensal < 3000.0)
@@ -61,20 +61,20 @@ namespace Programa
                 Console.WriteLine("RELATORIO DE IMPOSTO DE RENDA: ");
 
                 Console.WriteLine();
-
-                Console.WriteLine("CONSOLIDADO DE RENDA: "); // CONSOLIDADO DE RENDA
+                //*********************************************************************
+                Console.WriteLine("CONSOLIDADO DE RENDA: "); 
                Console.WriteLine("Imposto sobre salario: " + impostoSalario.ToString("F2", CI));
                  Console.WriteLine("Imposto sobre serviço: "+ impostoServico.ToString("F2", CI));
                 Console.WriteLine("Imposto sobre ganho de capital: " + impostoCapital.ToString("F2", CI));
 
                 Console.WriteLine();
 
-                Console.WriteLine("DEDUÇÕES: "); // DEDUÇÕES
+                Console.WriteLine("DEDUÇÕES: ");
                 Console.WriteLine("Maximo dedutivel: " + maxDedutivel.ToString("F2", CI));
                 Console.WriteLine("Gastos dedutiveis: " + gastosDeduciveis.ToString("F2", CI));
                 Console.WriteLine();
 
-                Console.WriteLine("RESUMO: "); // RESUMO
+                Console.WriteLine("RESUMO: "); 
                 Console.WriteLine("Imposto bruto total: " + impostoBrutoTotal.ToString("F2", CI));
                 Console.WriteLine("Abastimento: " + deducoes.ToString("F2", CI));
                 Console.WriteLine("Imposto devido: " + impostoDevido.ToString("F2", CI));
